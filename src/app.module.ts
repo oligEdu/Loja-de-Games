@@ -1,3 +1,4 @@
+import { CategoriaModule } from './Categoria/categoria.module';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Produto } from './Produto/entities/produto.entity';
@@ -17,6 +18,7 @@ import { ProdutoModule } from './Produto/produto.module';
       synchronize: true,
     }),
     ProdutoModule,
+    CategoriaModule,
   ],
   controllers: [],
   providers: [],
