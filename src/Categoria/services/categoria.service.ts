@@ -46,7 +46,7 @@ export class CategoriaService {
         produto: true,
       },
     });
-  g}
+  }
 
   async create(categoria: Categoria): Promise<Categoria> {
     return await this.categoriaRepository.save(categoria);
